@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body style="background: #f2f2f2;">
+		<div class="header_two">
+			<div class="top">
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
+				<div class="list">
+					<ul>
+						<li>
+							<a href="about_us.html">关于我们</a>
+						</li>
+						<li>
+							<a href="registered.html">免费注册</a>
+						</li>
+					</ul>
+				</div>
+				<div class="phone">
+					<div class="icon"></div>
+					<div class="list">
+						<i></i>
+						<ul>
+							<li><a href="registered.html">免费注册</a></li>
+							<li><a href="about_us.html">关于我们</a></li>
+							<li><a href="recruit.html">人才招聘</a></li>
+							<li><a href="javascript:;">服务协议</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--手机端-->
+		<div class="registered_phone">
+			<div class="zc_top">
+				<p class="zc_tit">个人资料</p>
+				<p class="zc_remarks">请留下您的真实信息便于我们的BD更了解你</p>
+				<span class="zc_line"></span>
+			</div>
+			<div class="zc_con">
+				<div class="zc_tel clearfix" id="zc_tel">
+					<span class="zc_span">手机号码</span>
+					<input type="text" value="" placeholder="输入您的手机号" required="required" id="mobile" />
+					<div class="zc_correct"><img src="images/error.png" width="15" height="15" /></div>
+					<div class="clear"></div>
+				</div>
+				<div class="zc_verification clearfix" id="zc_tel">
+					<span class="zc_span">验证码</span>
+					<input type="text" value="" placeholder="输入验证码" required="required" id="icode" />
+					<input type="button" name="muserv1_code" id="muserv1_code" value="发送验证码" />
+					<div class="zc_correct"><img src="images/error.png" width="15" height="15" /></div>
+				</div>
+				<input type="submit" value="下一步" class="zc_submit" id="myform" />
+			</div>
+
+		</div>
+
+
+		<form class="zc_con1">
+			<div class="zc_tel clearfix">
+				<span class="zc_span">真实姓名</span>
+				<input type="text" value="" placeholder="输入您的姓名" required="required" />
+				<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+				<div class="clear"></div>
+			</div>
+			<div class="zc_tel clearfix">
+				<span class="zc_span">性别</span>
+				<ul class="clearfix">
+					<li><i></i>男</li>
+					<li class="curr"><i></i>女</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="zc_tel clearfix">
+				<span class="zc_span">身份证号</span>
+				<input type="text" value="" placeholder="输入身份证号" required="required" />
+				<div class="zc_correct"><img src="images/error.png" width="15" height="15" /></div>
+				<div class="clear"></div>
+			</div>
+			<div class="zc_tel clearfix">
+				<span class="zc_span">手机号</span>
+				<input type="text" value="185 1174 6511" required="required" />
+				<div class="zc_correct"><img src="images/error.png" width="15" height="15" /></div>
+				<div class="clear"></div>
+			</div>
+			<div class="zc_top">
+				<p class="zc_tit">上传证件照片</p>
+				<p class="zc_remarks">请按照图片要求上传清晰照片</p>
+				<span class="zc_line"></span>
+			</div>
+			<div class="zc_upload">
+				<ul class="clearfix">
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp').click()" id="logoPreview"><img src="images/pic1.png" width="100%" id="logoImg" /></a>
+						<input type="file" name="" value="" id="logoUp" />
+						<span><i>*</i>点击上传身份证正面</span>
+					</li>
+					<li>
+						<a href="javascript:;"  onclick="$('#logoUp').click()" id="logoPreview1"><img src="images/pic2.png" width="100%"  id="logoImg1"/></a>
+						<input type="file" name=""  id="logoUp1" value="" />
+						<span><i>*</i>点击上传身份证背面</span>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp').click()" id="logoPreview2"><img src="images/pic3.png" width="100%"  id="logoImg2" /></a>
+						<input type="file" name=""  id="logoUp2" value="" />
+						<span><i>*</i>点击上传半身照</span>
+					</li>
+					<li>
+						<a href="javascript:;"  onclick="$('#logoUp').click()" id="logoPreview3"><img src="images/pic4.png" width="100%"   id="logoImg3"/></a>
+						<input type="file" name=""  id="logoUp3" value="" />
+						<span><i>*</i>点击上传手持身份证照</span>
+					</li>
+				</ul>
+			</div>
+			<input type="submit" value="提交" class="zc_submit" style="margin: 60px auto;" />
+		</form>
+		<div class="registered_box" style=" display: none;">
+			<div class="registered_pc">
+				<div class="info_con info_left">
+					<ul>
+						<li>
+							<span class="name">真实姓名</span>
+							<input type="text" value="" placeholder="输入您的姓名" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="sex">性别</span>
+							<div class="sex_con sex_nan"><i></i>男</div>
+							<div class="sex_con sex_nv curr"><i></i>女</div>
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="number">身份证号</span>
+							<input type="text" value="" placeholder="输入身份证号" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="tel">手机号</span>
+							<input type="text" value="" placeholder="输入您的手机号" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="info_con info_left">
+					<ul>
+						<li>
+							<span class="name">邮箱</span>
+							<input type="text" value="" placeholder="您常用的邮箱" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="name">所在地</span>
+							<input type="text" value="" placeholder="您所在区域" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="number">从业年限</span>
+							<input type="text" value="" placeholder="从业年限" required="required" style=" width: 86px; float: left;" />
+							<b>年</b>
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<span class="tel">语言</span>
+							<input type="text" value="" placeholder="普通话/英语/粤语" required="required" />
+							<div class="zc_correct"><img src="images/correct.png" width="15" height="15" /></div>
+							<div class="clear"></div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="same_title_pc">
+				<h3 style=" color: #eb6100;">上传证件照片</h3>
+				<p>请按照图片要求上传清晰照片</p>
+				<div class="ab_line"></div>
+			</div>
+			<div class="zc_upload_pc">
+				<ul class="clearfix">
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp4').click()" id="logoPreview4"><img src="images/pic1.png" width="100%"  id="logoImg4"/></a>
+						<input type="file" name="" value=""  id="logoUp4"/>
+						<span><i>*</i>点击上传身份证正面</span>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp5').click()" id="logoPreview5"><img src="images/pic2.png" width="100%"  id="logoImg5"/></a>
+						<input type="file" name="" value=""  id="logoUp5"/>
+						<span><i>*</i>点击上传身份证背面</span>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp6').click()" id="logoPreview6"><img src="images/pic3.png" width="100%"  id="logoImg6"/></a>
+						<input type="file" name="" value=""  id="logoUp6"/>
+						<span><i>*</i>点击上传半身照</span>
+					</li>
+					<li>
+						<a href="javascript:;" onclick="$('#logoUp7').click()" id="logoPreview7"><img src="images/pic4.png" width="100%"  id="logoImg7"/></a>
+						<input type="file" name="" value=""  id="logoUp7"/>
+						<span><i>*</i>点击上传手持身份证照</span>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<a href="javascript:;" class="button">提交</a>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/uploadPreview.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
