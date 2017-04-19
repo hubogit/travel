@@ -417,7 +417,7 @@ $("#sex_all .sex_nan").click(function() {
 $("#sex_all .sex_nv").click(function() {
 	$("#sex").val("2");
 })
-var hb_arr = [];
+var hb_arr = []; 
 //设置点击事件
 $("#sex_cons .sex_con").off("click").on("click", function() {
 		$(this).toggleClass("curr");
